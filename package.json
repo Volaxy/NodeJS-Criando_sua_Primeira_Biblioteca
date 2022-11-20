@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "__comment": "The 'scripts' key, is the commands to enter when we use Node, the command will be executed inside the value of the key OBS.: This not work because it's a folder course",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "file": "node cli.js ../files/texto.md",
+    "directory": "node cli.js ../files"
   },
   "repository": {
     "type": "git",

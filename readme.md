@@ -81,3 +81,32 @@ URL do curso -> [NodeJS - Criando sua Primeira Biblioteca](https://cursos.alura.
 * Retornar um objeto através da função `map()`.
 * Ler um arquivo e utilizar o regex para extrair os links dentro do arquivo.
 * Usar bibliotecas JS para validação de formulários.
+
+***
+
+## 04 - Usando a Linha de Comando &#x1F516;
+* A utilizar a interface de linha de comando e como aplicamos a lib `process` do Node.js para capturar e utilizar os dados informados no terminal em nosso código.
+* A organizar o código separando em arquivos as funções que lidam com entrada e saída de dados das funções que processam os links.
+* Como fazer estes diversos arquivos conversarem entre si através da exportação e importação de módulos com `import` e `export`.
+* Que scripts são instruções que usamos para automatizar tarefas e como escrever nossos próprios scripts, incluí-los no arquivo de configuração `package.json` e utilizá-los para executar comandos no terminal.
+
+### 01 - Executando Comandos
+* Passar lista de argumentos pelo terminal CLI quando o comando `node` for digitado com `process.argv`.
+* Usar o conceito de **import** e **export** para importar a função de ler arquivo para dentro da função que lê a lista de argumentos quando o comando `node` é executado.
+* Diferenças entre **caminho absoluto** e **caminho relativo**.
+    * OBS.: Quando o comando `node` for executado, o caminho que deve ser passado como parâmetro pela linha de comando deve ser **relativo** ao arquivo de texto `texto.md` de onde o comando `node` foi executado para o programa funcionar corretamente.
+
+### 02 - Organizando Entradas e Saídas
+* Delegar para o arquivo *`cli.js`* a função de listar os links encontrados no arquivo de texto.
+
+### 03 - Processando Diretórios
+* Usar a função `isFile()` do objeto `fs` para verificar se é um arquivo.
+* Usar a função `isDirectory()` do objeto `fs` para verificar se é um diretório.
+* Usar a função `fs.promises.readdir()` do objeto `fs` para listar todos os arquivos do diretório.
+* Usar a palavra chave `async` e `await` dentro da função `forEach()`.
+
+### 04 - Tratando Novos Erros
+* Exibir uma mensagem de erro para o usuário caso o diretório não seja encontrado.
+
+### 05 - Scripts
+* Usar o comando `npm run SCRIPT` para executar um script que foi configurado na chave `scripts` no arquivo *`package.json`*.
