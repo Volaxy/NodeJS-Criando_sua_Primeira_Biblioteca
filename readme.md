@@ -13,6 +13,8 @@ URL do curso -> [NodeJS - Criando sua Primeira Biblioteca](https://cursos.alura.
 ## Links Úteis &#x1F517;
 * [NodeJS](https://www.alura.com.br/artigos/guia-importacao-exportacao-modulos-javascript) - Site oficial do NodeJS.
 * [ESM vs CJS](https://www.alura.com.br/artigos/guia-importacao-exportacao-modulos-javascript) - Diferenças entre os 2 importadores de pacotes no Node.
+* [Regex 101](https://regex101.com/) - Site para montar expressões regulares e testar as expressões feitas.
+* [MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions) - Site da MDN sobre expressões regulares.
 
 ***
 
@@ -47,3 +49,35 @@ URL do curso -> [NodeJS - Criando sua Primeira Biblioteca](https://cursos.alura.
 
 ### 04 - async e await
 * Trabalhar com as palavras chave `async` e `await`.
+
+***
+
+## 03 - Capturando Links &#x1F516;
+* Como utilizar expressões regulares, uma sintaxe feita para reconhecer padrões de texto, para capturar links e URLs.
+* Como utilizamos classes e grupos de expressões regulares para refinar a busca por estes padrões, além dos métodos que o JavaScript tem (por exemplo `match` e `exec`) para trazer os resultados e trabalhar com eles.
+* Manipular os resultados extraídos do texto através de expressões regulares e montar um objeto de retorno utilizando a sintaxe do JavaScript e desestruturação de objetos com o *spread operator* `...`.
+
+### 01 - Expressões Regulares
+* Usar o site do **Regex 101** para testar as expressões regulares.
+* Utilizar expressões regulares para identificar links dentro de um arquivo.
+    * Digitar algum caractere para identificar uma letra específica dentro de um texto, como: `a`, `b`, `c`...
+    * Digitar os caracteres dentro de `[]` para verificar se existe algum caractere daqueles no texto: `[abc]`, `[abcde]`...
+    * Usar o `^` para indicar negação de caracteres: `[^a] = Não contem a letra 'a'`, `[^abc] = Não contem nem 'a', 'b' ou 'c'`.
+    * Usar intervalo de caracteres: `[a-z]`, `[A-z]`.
+    * Pegar ocorrências de espaços em branco com: `\s`.
+    * Usar `\` para escapar um caractere e identificar o *meta caractere* como uma ocorrência de texto.
+    * Pegar todas as ocorrências de caractere com `\w`.
+    * Pegar todas as ocorrências acima de 0 de determinada expressão com `*?`.
+
+### 02 - Classes e Grupos
+* Usar o `?` para dizer que o caractere pode ou não ocorrer.
+* Usar express'ao regular para achar links de URL.
+
+### 03 - Capturando Grupos
+* Capturar as ocorrências do regex em um texto passado como parâmetro e retornar informações sobre as ocorrências.
+
+### 04 - Retornando os Links
+* Usar a função `matchAll()` para verificar as ocorrências de **regex** em uma string.
+* Retornar um objeto através da função `map()`.
+* Ler um arquivo e utilizar o regex para extrair os links dentro do arquivo.
+* Usar bibliotecas JS para validação de formulários.
