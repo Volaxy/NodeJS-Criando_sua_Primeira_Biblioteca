@@ -110,3 +110,27 @@ URL do curso -> [NodeJS - Criando sua Primeira Biblioteca](https://cursos.alura.
 
 ### 05 - Scripts
 * Usar o comando `npm run SCRIPT` para executar um script que foi configurado na chave `scripts` no arquivo *`package.json`*.
+
+***
+
+## 05 - Validando Links &#x1F516;
+* Como utilizar acessar URLs com a API `fetch` e manipular os dados devolvidos, como o código de status HTTP.
+* Utilizar o método `Promise.all` para acessar de forma assíncrona um array de URLs e receber o resultado.
+* Que a API `fetch` é baseada no conceito de **promessas** em JavaScript, e nessa aula vimos como utiliza o `async/await` para resolver as promessas e garantir que o código seja executado de forma assíncrona, retornando os resultados.
+
+### 01 - Adicionando Opções
+* Verificar se o parâmetro `--validate` foi passado como parâmetro e validar os links.
+
+### 02 - Gerando uma Lista de URL's
+* Usar um validador para extrair os links dos objetos através da função `Object.values()`.
+* Converter os valores de um array para uma `string` com a função `join()`.
+
+### 03 - Validando Links
+* Usar o recurso novo do Node versão 18 que é o objeto `fetch`, que lida com requisições HTTP.
+* Receber uma lista de promessas com a função `Promise.all()`.
+* Retornar o status code de cada url nos arquivos de texto.
+
+### 04 - Montando o Objeto
+* Retornando um objeto com a url e o status da requisição da mesma url.
+* Tratar o erro de uma url que não foi encontrada.
+* Como publicar uma biblioteca no **NPM**.

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "__comment": "The 'scripts' key, is the commands to enter when we use Node, the command will be executed inside the value of the key OBS.: This not work because it's a folder course",
   "scripts": {
     "file": "node cli.js ../files/texto.md",
+    "file:validate": "node cli.js ../files/texto.md --validate",
     "directory": "node cli.js ../files"
   },
   "repository": {
